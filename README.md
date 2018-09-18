@@ -25,15 +25,22 @@ geth (multi-geth)
 Перед установкой что либо на новый сервер нужно обновить сервак.
 ************************************
 sudo apt-get update && sudo apt-get -y upgrade
+
 sudo apt-get -y install software-properties-common libzmq3-dev pwgen
+
 sudo apt-get -y install git libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libboost-all-dev unzip libminiupnpc-dev python-virtualenv
+
 sudo apt-get -y install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+
 sudo apt-get -y install virtualenv
+
 sudo add-apt-repository ppa:bitcoin/bitcoin
  
 sudo apt-get update 
+
 sudo apt-get -y install libdb4.8-dev libdb4.8++-dev 
-sudo adduser monoeci
+
+sudo adduser User
 *************************************
 1) Установить go lang
 
@@ -101,6 +108,7 @@ WantedBy=multi-user.target
 Затем запустите multi-geth следующими командами
 
 $ sudo systemctl enable callisto
+
 $ sudo systemctl start callisto
 
 Если вы хотите отладить команду узла
