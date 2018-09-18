@@ -71,6 +71,7 @@ $ sudo apt-get install nginx
 Это установит последние узлы nodejs
 
 $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
 $ sudo apt-get install -y nodejs
 
 *************************************
