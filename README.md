@@ -34,3 +34,44 @@ $ sudo apt-get install redis-server
 $ sudo apt-get install nginx
 
 образец конфигурации, расположенный в configs/nginx.default.example (HINT, отредактируйте и перейдите в /etc/nginx/sites-available/default)
+
+Установить NODE
+Это установит последние узлы nodejs
+
+$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+
+Установите мультигит
+
+$ wget https://github.com/ethereumsocial/multi-geth/releases/download/v1.8.10/multi-geth-linux-v1.8.10.zip
+$ unzip multi-geth-linux-v1.8.10.zip
+$ sudo mv geth /usr/local/bin/geth
+
+********************************************************
+Запустить мультигит
+Если вы используете Ubuntu, проще управлять услугами, используя сервисные услуги.
+
+$ sudo nano /etc/systemd/system/callisto.service
+
+Скопируйте следующий пример
+
+[Unit]
+Description=Callisto for Pool
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/geth --callisto --cache=1024 --rpc --extradata "Mined by <your-pool-domain>" --ethstats "<your-pool-domain>:Callisto@clostats.net"
+User=<your-user-name>
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+
+
+
+
+
