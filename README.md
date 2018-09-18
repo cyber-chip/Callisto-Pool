@@ -23,7 +23,7 @@ geth (multi-geth)
 
 Я настоятельно рекомендую использовать Ubuntu 16.04 LTS.
 Перед установкой что либо на новый сервер нужно обновить сервак.
-************************************
+
 sudo apt-get update && sudo apt-get -y upgrade
 
 sudo apt-get -y install software-properties-common libzmq3-dev pwgen
