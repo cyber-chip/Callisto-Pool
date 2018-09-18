@@ -45,6 +45,7 @@ sudo adduser User
 1) Установить go lang
 
 $ sudo apt-get install -y build-essential golang-1.10-go unzip
+
 $ sudo ln -s /usr/lib/go-1.10/bin/go /usr/local/bin/go
 
 *************************************
