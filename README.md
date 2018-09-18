@@ -58,7 +58,9 @@ $ sudo apt-get install -y nodejs
 5) Установите мультигит
 
 $ wget https://github.com/cyber-chip/Callisto-Pool/blob/master/multi-geth-linux.zip
+
 $ unzip multi-geth-linux.zip
+
 $ sudo mv geth /usr/local/bin/geth
 
 *************************************
