@@ -100,16 +100,19 @@ $ sudo nano /etc/systemd/system/callisto.service
 Скопируйте следующий пример
 
 [Unit]
+
 Description=Callisto for Pool
 
 After=network-online.target
 
 [Service]
+
 ExecStart=/usr/local/bin/geth --callisto --cache=1024 --rpc --extradata "Mined by <your-pool-domain>" --ethstats "<your-pool-domain>:Callisto@clostats.net"
  
 User=<your-user-name>
 
 [Install]
+
 WantedBy=multi-user.target
 
 *************************************
