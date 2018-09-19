@@ -87,6 +87,12 @@ $ wget https://github.com/ethoxy/multi-geth/releases/download/v1.8.15/multi-geth
 
 $ unzip multi-geth-linux.zip
 
+Release 1.0.0 Callisto - Geth 1.8.4 stable
+
+$ wget https://github.com/EthereumCommonwealth/go-callisto/releases/download/1.0.0/geth-linux-amd64
+
+$ unzip geth-linux-amd64
+
 $ sudo mv geth /usr/local/bin/geth
 
 *************************************
